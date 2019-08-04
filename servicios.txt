@@ -1,0 +1,143 @@
+[
+    {
+        "id" : '1',
+        "imagen" : "diseno.png",
+        "titulo" : "Diseño SG-SST",
+        "caracteristicas" : [
+            "Evaluación Inicial",
+            "Matriz de riesgos y Peligros",
+            "Formulación Plan de trabajo",
+            "Formulación Plan de capacitación"
+        ]
+
+    },
+
+    {
+        "id" : '2',
+        "imagen" : "implementacion.png",
+        "titulo" : "Implementación SG-SST",
+        "caracteristicas" : [
+            "Documentación de todos los contenidos de la Resolución 0312 Estándares Mínimos, correspondiente a cada grupo de Empresas",
+            "Asesoría para la implementación de los programas de SST requeridos de acuerdo con los riesgos y peligros prioritarios de cada Empresa",
+            "Asesoría para la solicitud de asistencia técnica a la ARL",
+            "Asesoría para el tramite de AL/EL ante la ARL",
+            "Plan de mejora hallazgos auditoria interna",
+            "Formulación acciones preventivas/Correctivas"
+        ]
+
+    },
+
+    {
+        "id" : '3',
+        "imagen" : "mantenimiento.png",
+        "titulo" : "Mantenimiento SG-SST",
+        "caracteristicas" : [
+            "Asignación de un profesional con licencia como responsable del SG-SST de acuerdo al tipo de Empresa",
+            "Implementación anual de todos los contenidos de la Res. 0312, de acuerdo al tipo de empresa",
+            "Actualización anual de la documentación",
+            "Asesoría para el tramite de AL/EL ante la ARL",
+            "Plan de mejora hallazgos auditoria interna"
+        ]
+
+    },
+
+    {
+        "id" : '4',
+        "imagen" : "capacitacion.png",
+        "titulo" : "Capacitación sobre Seguridad y Salud en el Trabajo",
+        "caracteristicas" : [
+            "Sistema de gestión de SST",
+            "Prevención de accidentes de labores",
+            "Prevención de Riesgo Psicosocial",
+            "Prevención de riesgo biomecánico",
+            "Socialización de programas",
+            "Seguridad basada en el comportamiento",
+            "Prevención de emergencias",
+            "Capacitación en Programa de Higiene y Seguridad Industrial"
+        ]
+
+    },
+
+    {
+        "id" : '5',
+        "imagen" : "asesoria.png",
+        "titulo" : "Asesoría en la implementación de programa de Salud Laboral",
+        "caracteristicas" : [
+            "Descripción sociodemográfica y Diagnóstico de condiciones de salud de los trabajadores",
+            "Actividades de medicina del trabajo y de prevención y promoción de la Salud",
+            "Estilos de vida y entorno saludable",
+            "Indicadores de ausentismo, EL, frecuencia,    severidad y prevalencia de EL, incidencia de EL",
+            "Programa de vigilancia epidemiológica",
+            "Programa de Salud Mental"
+        ]
+
+    },
+
+    {
+        "id" : '6',
+        "imagen" : "psicosocial.png",
+        "titulo" : "Asesoría en la implementación de programa de riesgo psicosocial SG-SST",
+        "caracteristicas" : [
+            "Comité de convivencia Laboral",
+            "Análisis de Puestos de trabajo (APT) psicosocial",
+            "Programa de salud mental",
+            "Prevención del acoso laboral (Ley 1010)",
+            "Aplicación de la batería de riesgo psicosocial",
+            "Prevención de consumo de sustancias psicoactivas"
+        ]
+
+    },
+
+    {
+        "id" : '7',
+        "imagen" : "rediseno.png",
+        "titulo" : "Rediseño de Procesos",
+        "caracteristicas" : [
+            "Mapeo de procesos",
+            "Manuales de funciones",
+            "Manuales de procedimientos",
+            "Optimización de procesos administrativos"
+        ]
+
+    },
+
+    {
+        "id" : '8',
+        "imagen" : "auditoria.png",
+        "titulo" : "Auditoria del SG-SST",
+        "caracteristicas" : [
+            "Realización de auditorias internas del SG-SST",
+            "Auditores certificados por entes como Bureau Veritas, SGS, Icontec"
+        ]
+
+    },
+
+    {
+        "id" : '9',
+        "imagen" : "legal.png",
+        "titulo" : "Asesoría Legal",
+        "caracteristicas" : [
+            "Asesoría en el tramite de reporte de accidentes de trabajo graves y mortales",
+            "Asesoría en el reconocimiento de prestaciones económicas y asistenciales",
+            "Asesoría en procesos de calificación de origen de accidentes de laborales y enfermedades laborales",
+            "Asesoría en tramite de calificación de perdida de capacidad laboral ante las ARL, Juntas regionales y Junta Nacional de calificación"
+        ]
+
+    },
+
+    {
+        "id" : '10',
+        "imagen" : "industrial.png",
+        "titulo" : "Asesoría en la implementación de programa de higiene y seguridad industrial",
+        "caracteristicas" : [
+            "Programa de trabajo seguro en alturas",
+            "Programa de elementos de protección individual",
+            "Plan de emergencias",
+            "Plan estratégico de seguridad vial",
+            "nspecciones a instalaciones, maquinaria o equipos",
+            "Programa de mantenimiento periódico de las instalaciones, equipos, máquinas y herramientas",
+            "Mediciones higiénicas (Ruido, iluminación, vibración, material particulado)"
+        ]
+
+    }
+]
