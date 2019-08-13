@@ -76,7 +76,7 @@
     {
         "id" : '6',
         "imagen" : "psicosocial.png",
-        "titulo" : "Asesoría en la implementación de programa de riesgo psicosocial SG-SST",
+        "titulo" : "Asesoría en la implementación de programa de riesgo psicosocial",
         "caracteristicas" : [
             "Comité de convivencia Laboral",
             "Análisis de Puestos de trabajo (APT) psicosocial",
@@ -127,6 +127,21 @@
 
     {
         "id" : '10',
+        "imagen" : "coaching.png",
+        "titulo" : "Desarrollo Organizacional (Coaching)",
+        "caracteristicas" : [
+            "Evaluación, Diseño y desarrollo de planes de Coaching",
+            "Manejo procesos de cambio organizacional",
+            "Acompañamiento en procesos de cambio e identificación de Cultura Organizacional",
+            "Plan estratégico de seguridad vial",
+            "Talleres crecimiento personal y organizacional",
+            "Fortalecimiento habilidades blandas"
+        ]
+
+    },
+
+    {
+        "id" : '11',
         "imagen" : "industrial.png",
         "titulo" : "Asesoría en la implementación de programa de higiene y seguridad industrial",
         "caracteristicas" : [
@@ -134,7 +149,7 @@
             "Programa de elementos de protección individual",
             "Plan de emergencias",
             "Plan estratégico de seguridad vial",
-            "nspecciones a instalaciones, maquinaria o equipos",
+            "Inspecciones a instalaciones, maquinaria o equipos",
             "Programa de mantenimiento periódico de las instalaciones, equipos, máquinas y herramientas",
             "Mediciones higiénicas (Ruido, iluminación, vibración, material particulado)"
         ]

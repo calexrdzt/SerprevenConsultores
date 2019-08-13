@@ -1,6 +1,33 @@
 // importar el módulo express
 var express = require('express');
 var exphbs = require('express-handlebars'); 
+var db;
+
+const MongoClient = require('mongodb').MongoClient;
+const assert = require('assert');
+
+// Connection URL
+const url = 'mongodb://localhost:27017';
+
+// Database Name
+const dbName = 'Serpreven';
+
+// Create a new MongoClient
+const client = new MongoClient(url);
+
+// Use connect method to connect to the Server
+client.connect(function(err) {
+    assert.equal(null, err);
+    console.log("Connected successfully to server");
+  
+    db = client.db(dbName);
+
+  
+  
+    // client.close();
+  });
+  
+
 
 var fs = require('fs');
 
@@ -23,8 +50,24 @@ app.engine('handlebars', exphbs({
 
 
 app.get('/', function (req, res) {
+
+    
+    var collection = db.collection('servicios');
+        collection.find({}).toArray(function(err, docs) {
+        assert.equal(err, null);
+        console.log("Found the following records");
+        console.log(docs);
+    });
+
     res.render('Main');
 });
+
+
+
+
+
+
+
 
 
 

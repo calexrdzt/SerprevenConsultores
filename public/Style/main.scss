@@ -1,4 +1,5 @@
 $principal :  rgb(132, 220, 184);
+$azul : rgb(63, 61, 86);
 
 
 html{
@@ -6,6 +7,10 @@ html{
     padding: 0;
     height: 100%;
 }
+a{
+    text-decoration: none;
+    position: relative;
+   }
 
 body{
     margin: 0;
@@ -87,6 +92,7 @@ ul{
 }
 
 li {
+    
     display: inline;
     text-decoration: none;
     padding: 0 60px;
@@ -96,9 +102,15 @@ li {
     margin: auto;
     font-size: 1.1em;
     cursor: pointer;
+    opacity: 10%;
+    transition: all 0.3s;
 }
 
-
+li:hover{
+    opacity: 100%;
+    color: $principal;
+}
+ 
 .home{
     width: 100%;
     height: 668px;
@@ -128,6 +140,7 @@ li {
     }
 
     &__descripcion{
+        text-align : justify;
         color: white;
         font-family: 'Muli', sans-serif;
     }
@@ -190,6 +203,7 @@ li {
     }
 
     &__descripcion{
+        text-align : justify;
         font-family: 'Muli', sans-serif;
         font-size: 1em;
         
@@ -207,6 +221,7 @@ li {
         background-image: url(/Recursos/Fondo.png);
         background-size: cover;
         background-repeat: no-repeat;
+        box-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
     }
 
     &__item{
@@ -222,4 +237,282 @@ li {
             margin: 8px 0 0 0;
         }
     }
+}
+
+.servicios{
+
+    width: 100%;
+    height: 50%;
+    text-align: center;
+
+    &__titulo{
+        color: $azul;
+        font-family: 'Muli', sans-serif;
+        font-weight: 600;
+        font-size: 2.4em;    
+        margin: 30px 0;
+
+    }
+
+
+
+
+    &__uno{
+        width: 50%;
+        height: 70px;
+        background-color: $principal;
+        margin: 0 auto;
+        transition: all 0.3s ease 0s;
+        cursor: pointer; 
+        
+        &-titulo{
+            text-align: center;
+            margin: 0;
+            font-family: 'Muli', sans-serif;
+            font-size: 1.4em;
+            font-weight: 900;
+            color: $azul;
+        }
+        
+        &-cars{
+            display: none;
+        }
+        
+    }
+    
+    &__uno:hover{
+         box-shadow: 7px 7px rgba(0, 0, 0, 0.3);  
+    }
+}
+
+.solicitar{
+    width: 100%;
+    height: 70%;
+    background-color: rgb(225, 225, 225);
+    display: flex;
+    align-content: center;
+
+    &__info{
+        width: 40%;
+        padding: 0 60px;
+        box-sizing: border-box;
+        margin: auto;
+
+        align-content: center;
+
+        &-titulo{
+            color: $azul;
+            font-family: 'Muli', sans-serif;
+            font-weight: 600;
+            font-size: 2.4em;    
+        }
+
+        &-texto{
+            font-family: 'Muli', sans-serif;
+            font-size: 1.2em;
+        }
+    }
+
+    &__mensaje{
+        width: 50%;
+        height: 75%;
+        background-color: white;
+        padding: 15px 20px 15px 40px;
+        box-sizing: border-box;
+        margin: auto;
+        
+
+        &-etiqueta{
+            font-family: 'Muli', sans-serif;
+            font-size: 1em;
+            margin: 5px 0;
+        }
+
+        &-input{
+            width: 90%;
+            height: 40px;
+            padding: 0 20px;
+            border: none;
+            background-color: rgb(225, 225, 225);
+            font-family: 'Muli', sans-serif;
+            font-size: 1em;
+            margin: 0;
+            margin-bottom: 15px; 
+            
+        }
+
+        &-mensaje{
+            border: none;
+            background-color: rgb(225, 225, 225);
+            font-family: 'Muli', sans-serif;
+            font-size: 1em;
+            width: 90%;
+            height: 31%;
+            padding: 0 20px;
+            margin: 0;
+            margin-bottom: 15px; 
+        }
+    }
+}
+
+.interes{
+
+    background-color: rgb(225, 225, 225);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    &__titulo{
+        margin: 0;
+        padding: auto;
+        height: 90px;
+        line-height: 90px;
+        text-align: center;
+        align-content: center;
+        background-color: $principal;
+        color: $azul;
+        font-family: 'Muli', sans-serif;
+        font-weight: 600;
+    }
+
+    &__tema{
+        margin: 40px auto;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        width: 65%;
+        height: 300px;
+        padding: 40px;
+        
+
+        &-img{
+            margin: auto 0;
+            background-image: url(https://gerens.pe/blog/wp-content/uploads/2016/04/consultores-organizacionales.jpg);
+            height: 90%;
+            width: 45%;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        &-info{
+           width: 50%;
+           margin: 0;
+            text-align: start;
+        }
+
+        &-titulo{
+            color: $azul;
+            font-family: 'Muli', sans-serif;
+        }
+
+        &-texto{
+            text-align : justify;
+            font-family: 'Muli', sans-serif;
+            font-size: 1em;
+        }
+    }
+
+   
+}
+
+.contacto{
+    background-image: url(/Recursos/fondoCon.png);
+    width: 100%;
+    height: 400px; 
+    margin: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    &__info{
+        width: 65%;
+        height: auto;
+        margin: auto;
+              
+
+        &-titulo{
+            color: $azul;
+            font-family: 'Muli', sans-serif;
+            margin: 0;
+            font-size: 1.9em;
+        }
+
+        &-text{
+            font-family: 'Muli', sans-serif;
+            font-size: 1.1em;
+            width: 30%;
+            margin: 10px;
+        }
+
+        &-item{
+            display: flex;
+        }
+
+
+        &-ico{
+            margin: auto 0;
+            width: 25px;
+            height: 25px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-image: url(/Recursos/Fondo.png);
+    background-color: rgb(65, 69, 76);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    &__logo{
+        width: 100%;
+        height: 100px;
+        margin-top: 15px;
+        background-image: url(/Recursos/logoF.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+    }
+    &__redes{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    
+        &-red{
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+            width: 35px;
+            height: 35px;
+            margin: 15px;
+
+        }
+    }
+
+    &__derechos{
+        text-align: center;
+        margin: 0;
+        font-family: 'Muli', sans-serif;
+        font-size: 0.8em;
+        color: white;
+        margin-bottom: 15px;
+    }
+
+    
 }

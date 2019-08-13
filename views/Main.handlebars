@@ -20,9 +20,9 @@
                 <div class="header__navbar">
                         <img src="/Recursos/logop.png" alt="" class="navbar__logo">
                         <ul class="navbar">                           
-                            <li class="item">A cerca de nosotros</li>
-                            <li class="item-s">Servicios</li>
-                            <li class="item">Contacto</li>
+                           <a href="#Quienes"><li class="item">A cerca de nosotros</li></a>
+                            <a href="#Servicios"><li class="item-s">Servicios</li></a>
+                           <a href="#Contacto"><li class="item">Contacto</li></a> 
                         </ul>
                         <button class="servicio">Solicitar un servicio</button>
                 </div>
@@ -37,7 +37,7 @@
         </div>
     </div>
 
-    <div class="quienes">
+    <div class="quienes" id="Quienes">
         <div class="quienes__contenido">
             <div class="quienes__img">
                 <img src="/Recursos/Quienes.png" alt="" class="quienes__imagen" >
@@ -71,6 +71,105 @@
             </div>
         </div>
     </div>
+
+
+    <div class="servicios" id="Servicios">
+        <h1 class="servicios__titulo">Nuestros servicios</h1>
+        <div class="servicios__uno">
+            <div class="srvicios__uno-img">
+                <img src="" alt="" class="servicios__uno-imagen">
+            </div>
+
+            <h2 class="servicios__uno-titulo">Diseño SG-SST</h2>
+            
+            <div class="servicios__uno-cars">
+                <p class="servicios__uno-car">car 1</p>
+                <p class="servicios__uno-car">car 1</p>
+                <p class="servicios__uno-car">car 1</p>
+                <p class="servicios__uno-car">car 1</p>
+                <p class="servicios__uno-car">car 1</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="solicitar">
+        <div class="solicitar__info">
+            <h1 class="solicitar__info-titulo">Solicitar un servicio</h1>
+            <p class="solicitar__info-texto">Solicite la información necesaria a traves de este formulario o puede ponerse en contacto con nosotros a traves de nuestro correo electronico o numero de telefono</p>
+        </div>
+        <div class="solicitar__mensaje">
+            <p class="solicitar__mensaje-etiqueta">Nombre</p>
+            <input class="solicitar__mensaje-input" type="text" placeholder="Nombre">
+
+            <p class="solicitar__mensaje-etiqueta">E-mail</p>
+            <input class="solicitar__mensaje-input" type="email" name="" id="" placeholder="correo@ejemplo.com">
+
+            <p class="solicitar__mensaje-etiqueta">Mensaje</p>
+            <input class="solicitar__mensaje-mensaje" type="text" placeholder="Mensaje">
+        </div>
+    </div>
+
+
+    <div class="interes">
+        <h1 class="interes__titulo">Temas de interés</h1>
+
+        <div class="interes__tema">
+            <div class="interes__tema-img"></div>
+            
+            <div class="interes__tema-info">
+                <h2 class="interes__tema-titulo">Titulo del tema de interes</h2>
+                <p class="interes__tema-texto">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum laudantium sit nostrum maxime veniam possimus, ducimus quisquam aspernatur voluptatum atque nihil quas magnam quibusdam similique  necessitatibus vitae odit libero eaque.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contacto" id="Contacto">
+        <div class="contacto__info">
+            <h2 class="contacto__info-titulo">Contáctanos</h2>
+            
+            <div class="contacto__info-item">
+                <div class="contacto__info-ico" style="background-image:url(/Recursos/nombre.png);"></div>
+                <p class="contacto__info-text">Ricardo Fajardo Alvarez</p>
+            </div>
+            
+            <div class="contacto__info-item">
+                <div class="contacto__info-ico" style="background-image: url(/Recursos/cel.png);"></div>
+                <p class="contacto__info-text">Celular 3153242469</p>
+            </div>
+
+            <div class="contacto__info-item">
+                <div class="contacto__info-ico" style="background-image:url(/Recursos/email.png);"></div>
+                <p class="contacto__info-text">
+                    E-mail: gerencia@serprevenconsultores.com <br> 
+                    gerenciatecnica@serprevenconsultores.com
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__logo"></div>
+        <div class="footer__redes">
+            <a href="https://instagram.com/serprevenconsultores?igshid=1kre5oafwuu9o" target="blank">
+                 <div class="footer__redes-red"  style="background-image: url(/Recursos/insta.png);"></div>
+            </a>
+
+            <a href="https://www.facebook.com/Serprevenconsultores/" target="blank">
+                <div class="footer__redes-red"  style="background-image: url(/Recursos/face.png);"></div>
+            </a>
+
+            <a href="https://www.reddit.com/r/beatsbydre/" target="blank">
+                <div class="footer__redes-red"  style="background-image: url(/Recursos/in.png);"></div>
+            </a>
+        </div>
+            
+        <p class="footer__derechos">Copyright © Todos los Derechos Reservados 2019<br>Forografía por: unsplash.com</p>
+    </footer>
 
 </body>
 
