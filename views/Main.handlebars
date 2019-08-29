@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/Style/main.css">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
-    
+    <script src="https://unpkg.com/scrollreveal"></script>  
     
     <title>Serpreven Consultores</title>
 
@@ -20,8 +20,8 @@
                 <div class="header__navbar">
                         <img src="/Recursos/logop.png" alt="" class="navbar__logo">
                         <ul class="navbar">                           
-                           <a href="#Quienes"><li class="item">A cerca de nosotros</li></a>
-                            <a href="#Servicios"><li class="item-s">Servicios</li></a>
+                           <a href="#Quienes"><li class="item">Acerca de nosotros</li></a>
+                            <a href="#Servicios"><li class="item">Servicios</li></a>
                            <a href="#Contacto"><li class="item">Contacto</li></a> 
                         </ul>
                         <button class="servicio">Solicitar un servicio</button>
@@ -55,18 +55,18 @@
         </div>
 
         <div class="quienes__caracteristicas">
-            <div class="quienes__item">
-                <img src="/Recursos/agilidad.png" alt="" class="quienes__item-img">
+            <div class="quienes__item" id="agilidad">
+                <img src="/Recursos/agilidad.png"  class="quienes__item-img">
                 <p class="quienes__item-texto">Agilidad</p>
             </div>
 
-            <div class="quienes__item">
-                <img src="/Recursos/integridad.png" alt="" class="quienes__item-img">
+            <div class="quienes__item" id="integridad">
+                <img src="/Recursos/integridad.png"  class="quienes__item-img">
                 <p class="quienes__item-texto">Integridad</p>
             </div>
 
-            <div class="quienes__item">
-                <img src="/Recursos/experiencia.png" alt="" class="quienes__item-img">
+            <div class="quienes__item" id="experiencia">
+                <img src="/Recursos/experiencia.png"  class="quienes__item-img">
                 <p class="quienes__item-texto">Experiencia</p>
             </div>
         </div>
@@ -75,25 +75,25 @@
 
     <div class="servicios" id="Servicios">
         <h1 class="servicios__titulo">Nuestros servicios</h1>
-
+ 
+       
         {{#each servicios}}
         <div class="servicios__uno">
-            <div class="srvicios__uno-img">
                 <div class="servicios__uno-imagen" style="background-image:url(/Recursos/{{imagen}});"></div>
-            </div>
-
-            <h2 class="servicios__uno-titulo">{{titulo}}</h2>
-            
-            <div class="servicios__uno-cars">
-                <p class="servicios__uno-car">{{caracteristicas.[0]}}</p>
-                <p class="servicios__uno-car">{{caracteristicas.[1]}}</p>
-                <p class="servicios__uno-car">{{caracteristicas.[2]}}</p>
-                <p class="servicios__uno-car">{{caracteristicas.[3]}}</p>
-                <p class="servicios__uno-car">{{caracteristicas.[4]}}</p>
+            <div class="servicios__uno-info">
+                <h2 class="servicios__uno-titulo">{{titulo}}</h2> 
+                <ul class="servicios__uno-cars">
+                    <li class="servicios__uno-car">{{caracteristicas.[0]}}</li>
+                    <li class="servicios__uno-car">{{caracteristicas.[1]}}</li>
+                    <li class="servicios__uno-car">{{caracteristicas.[2]}}</li>
+                    <li class="servicios__uno-car">{{caracteristicas.[3]}}</li>
+                    <li class="servicios__uno-car">{{caracteristicas.[4]}}</li>
+                </ul>
             </div>
 
         </div>
         {{/each}}
+            
 
     </div>
 

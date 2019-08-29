@@ -6,6 +6,7 @@ html{
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
 }
 a{
     text-decoration: none;
@@ -15,6 +16,7 @@ a{
 body{
     margin: 0;
     height: 100%;
+    width: 100%;
 }
 
 .header{
@@ -84,14 +86,14 @@ body{
     box-shadow: 7px 7px rgba(0, 0, 0, 0.3);
     
 }
-ul{
+.navbar{
     align-items: flex-end;
     margin: 0 auto 0 237px;
     width: auto;
     align-content: center;
 }
 
-li {
+.item {
     
     display: inline;
     text-decoration: none;
@@ -106,7 +108,7 @@ li {
     transition: all 0.3s;
 }
 
-li:hover{
+.item:hover{
     opacity: 100%;
     color: $principal;
 }
@@ -185,8 +187,8 @@ li:hover{
     }
     
     &__imagen{
-                margin: auto;
-                height: 80%;
+        margin: auto;
+        height: 80%;
             }
 
     &__texto{
@@ -239,10 +241,11 @@ li:hover{
     }
 }
 
+
 .servicios{
 
     width: 100%;
-    height: 50%;
+    height: auto;
     text-align: center;
 
     &__titulo{
@@ -251,38 +254,86 @@ li:hover{
         font-weight: 600;
         font-size: 2.4em;    
         margin: 30px 0;
-
     }
 
-
-
+    
 
     &__uno{
-        width: 50%;
-        height: 70px;
+        width: 60%;
+      //  height: 70px;
+        height: auto;
         background-color: $principal;
-        margin: 0 auto;
+        margin: 20px auto;
         transition: all 0.3s ease 0s;
         cursor: pointer; 
+        display: flex;
+        text-align: center;
+        padding: 20px;
+
+        
+        &-imagen{
+            width: 300px;
+            height: 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: none;
+            margin-right: 25px;
+        }
         
         &-titulo{
             text-align: center;
-            margin: 0;
+            margin: auto;
             font-family: 'Muli', sans-serif;
             font-size: 1.4em;
-            font-weight: 900;
+            font-weight: 800;
             color: $azul;
+        }
+        &-info{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
         }
         
         &-cars{
             display: none;
+            font-family: 'Muli', sans-serif;
+            font-size: 1em;
+            text-align: left;
+            padding: 0 0 0 50px;
+            list-style-image: url('/Recursos/point.png');
         }
         
+        &-car{
+            margin: 15px;
+        }
+        
+    }
+
+    &__uno:nth-child(odd){
+       flex-direction:  row-reverse;
     }
     
     &__uno:hover{
          box-shadow: 7px 7px rgba(0, 0, 0, 0.3);  
     }
+}
+
+.point{
+    width: 15px;
+    height: 15px;
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.car{
+    display: flex;
+    justify-content: flex-start;
+    height: 20px;
+    margin: 25px 0;
+
 }
 
 .solicitar{
@@ -418,6 +469,33 @@ li:hover{
    
 }
 
+.servicio{
+    
+    &__desplegar{
+        display: flex;
+
+        & .servicios__uno-imagen {
+            display: block;
+            height: auto;
+            width: 400px;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        & .servicios__uno-cars{
+            text-align: left;
+            display: block;
+            padding: 0;
+            margin: 0;
+        }
+ 
+        & .servicios__uno-info{
+            text-align: left;
+        }
+    }
+}
+
 .contacto{
     background-image: url(/Recursos/fondoCon.png);
     width: 100%;
@@ -515,4 +593,315 @@ li:hover{
     }
 
     
+}
+
+
+// Aqui inicia el css del responsive 
+
+@media screen and (max-width: 600px) {
+
+
+.header{
+   
+    &__contenido{
+       
+    }
+
+    &__logo{
+        height: 200px;
+    
+    }
+
+    &__navbar{
+      
+    }
+
+}
+
+.navbar__logo{
+       
+}
+
+.servicio{
+   
+}
+
+
+.servicio:hover{
+  
+    
+}
+.navbar{
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    padding: 10px 60px;
+}
+
+.item:hover{
+    
+}
+
+
+
+.home{
+margin: 0;
+    &__contenido{
+        width: 100%;
+        height: 50%;
+        margin: auto 25px;
+        padding: 10px;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    
+    &__serprevent{
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+    &__descripcion{
+        font-size: 1.2em;
+    }
+
+}
+
+.servicio2{
+  
+}
+
+
+
+.quienes{
+
+    height: auto;
+    &__contenido{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+    &__img{
+        width: 100%;
+        height: 300px;
+    }
+    
+    &__imagen{
+        height: 100%;
+    }
+
+    &__texto{
+        flex-basis: 100%;
+        padding: 30px;
+        text-align: center;
+        margin: 10px;
+    }
+
+    &__titulo{
+        text-align: center;
+    }
+
+    &__descripcion{
+
+        
+    }
+
+    &__caracteristicas{
+        margin: 0;
+        justify-content: space-around;
+  
+    }
+
+    &__item{
+        height: 20%;
+        padding: 0 10px;
+
+        &-img{
+            height: 50px;
+        }
+        
+             &-texto{
+                font-size: 1em;
+            }
+        }
+}
+
+
+
+
+
+
+
+
+.servicios{
+
+    &__titulo{
+     
+    }
+
+
+
+    &__uno{
+        flex-direction: column;
+        width: 75%;
+        
+        &-imagen{
+           width: 100px;
+           height: 100px;
+           background-color: rebeccapurple;
+        }
+        
+        &-titulo{
+         font-size: 1.3em;
+        }
+
+        &-info{
+         
+        }
+        
+        &-cars{
+           
+        }
+        
+        &-car{
+           
+        }
+        
+    }
+
+    &__uno:nth-child(odd){
+     flex-direction: column;
+    }
+
+}
+
+.point{
+  
+}
+
+.car{
+   
+
+}
+
+
+
+
+.solicitar{
+
+    flex-direction: column;
+    height: auto;
+
+    &__info{
+        width: 100%;
+        margin: 0;
+
+        &-titulo{
+            text-align: center;
+            font-size: 2em;
+        }
+
+        &-texto{
+            font-size: 1.1em;
+            text-align: center;
+        }
+    }
+
+    &__mensaje{
+        width: 100%;
+        margin: 0;
+        
+
+        &-etiqueta{
+
+        }
+
+        &-input{
+
+            
+        }
+
+        &-mensaje{
+            height: 65px;
+        }
+    }
+}
+
+
+
+.interes{
+
+    &__titulo{
+      
+    }
+
+    &__tema{
+       flex-direction: column;
+       height: auto;
+        
+
+        &-img{
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+        }
+
+        &-info{
+            width: 100%;
+        }
+
+        &-titulo{
+          
+        }
+
+        &-texto{
+         
+        }
+    }
+
+   
+}
+
+
+
+
+
+.contacto{
+
+    &__info{
+        padding: 0 35px;
+        width: 100%;
+        height: auto;
+        margin: auto;
+              
+
+        &-titulo{
+           
+        }
+
+        &-text{
+            font-size: 1em;
+            width: 80%;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

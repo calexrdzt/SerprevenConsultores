@@ -10,7 +10,7 @@ const assert = require('assert');
 const url = 'mongodb://localhost:27017';
 
 // Database Name
-const dbName = 'Serpreven';
+const dbName = 'servicios';
 
 // Create a new MongoClient
 const client = new MongoClient(url);
@@ -51,15 +51,19 @@ app.engine('handlebars', exphbs({
 
 app.get('/', function (req, res) {
 
-    
+    var informacion = {};
     var collection = db.collection('servicios');
         collection.find({}).toArray(function(err, docs) {
         assert.equal(err, null);
         console.log("Found the following records");
-        console.log(docs);
+      //  console.log(docs);
+
+        informacion.servicios = docs;
+
+        res.render('Main', informacion);
     });
 
-    res.render('Main');
+  
 });
 
 
